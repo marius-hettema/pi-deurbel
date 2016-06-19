@@ -62,7 +62,7 @@ def pushover_alert():
     conn.getresponse()
 
 # add callback to deurbel method when input goes to low
-GPIO.add_event_detect(INPUT_PIN, GPIO.FALLING, callback=deurbel, bouncetime=200)
+GPIO.add_event_detect(INPUT_PIN, GPIO.FALLING, callback=deurbel, bouncetime=250)
 
 print "start listening..."
 
